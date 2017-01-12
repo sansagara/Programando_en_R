@@ -104,13 +104,6 @@
   AnswerTests: omnitest(correctExpr='my_sqrt <- sqrt(z - 1)')
   Hint: Asigne el resultado de sqrt (z - 1) a una variable llamada my_sqrt.
 
-- Class: mult_question
-  Output: Antes de ver el contenido de la variable my_sqrt, ¿qué crees que contiene?
-  CorrectAnswer: un vector de longitud 3
-  AnswerChoices: un vector de longitud 3; un solo número (es decir, un vector de longitud 1); un vector de longitud 0 (es decir, un vector vacío)
-  AnswerTests: omnitest(correctVal='un vector de longitud 3')
-  Hint: 'Piensa en cómo R manejó la otra operación ''vectorizada'': elemento por elemento.'
-
 - Class: cmd_question
   Output: Imprime el contenido de my_sqrt.
   CorrectAnswer: my_sqrt
@@ -125,13 +118,6 @@
   CorrectAnswer: my_div <- z / my_sqrt
   AnswerTests: omnitest(correctExpr='my_div <- z / my_sqrt')
   Hint: Introduzca my_div <- z / my_sqrt. No se requieren los espacios a ambos lados del signo `/`, pero a menudo puede mejorar la legibilidad haciendo código aparece más despejado. Al final, es una preferencia personal.
-  
-- Class: mult_question
-  Output: ¿Cuál crees que es la declaración verdadera?
-  CorrectAnswer: El primer elemento de my_div es igual al primer elemento de z dividido por el primer elemento de my_sqrt, y así sucesivamente ...
-  AnswerChoices: El primer elemento de my_div es igual al primer elemento de z dividido por el primer elemento de my_sqrt, y así sucesivamente ...; my_div es un solo número (es decir, un vector de longitud 1); my_div es indefinido
-  AnswerTests: omnitest(correctVal='El primer elemento de my_div es igual al primer elemento de z dividido por el primer elemento de my_sqrt, y así sucesivamente ...')
-  Hint: Piense acerca de cómo R maneja las otras operaciones 'vectorizadas' como `+` y `*`.
 
 - Class: cmd_question
   Output: Adelante e imprimir el contenido de my_div.
